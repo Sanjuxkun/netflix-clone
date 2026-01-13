@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: black
+}
+
+.main {
+    background-image: url(assets/image/bg2.jpg);
+    height: 95vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: .77;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 90px;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: xx-large;
+    position: relative;
+    gap: 24px;
+    padding: 0 30px;
+}
+
+.headtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero>.headtext :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.hero>.headtext :nth-child(2) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    /* top: 100px; */
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    /* top: 100px; */
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    /* top: 100px; */
+}
+
+.sepration {
+    /* height: 11px;
+background-color: red;
+border-radius: 50% 50% 0 0; */
+    content: icon;
+    position: absolute;
+    bottom: 0px;
+    /* Adjust to control the curve's position */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* Controls the size of the curve */
+    background-color: #ff1919;
+    /* Match the background color of the section below */
+    border-radius: 50% 50% 0 0;
+    box-shadow: blue;
+}
+
+.btn {
+    font-family: "poppins", sans-serif;
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(249, 249, 249, 0.053);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 13px 30px;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 4px;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.main input {
+    color: white;
+    padding: 19px 150px 19px 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.7);
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.426);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.trend {
+    /* background-color: aliceblue; */
+    margin: auto;
+}
+
+.trend h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 60px;
+    padding-left: 115px;
+    padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1269px) {
+    .slide {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        /* grid-template-columns: 1fr 1fr; */
+        /* overflow: hidden; */
+
+    }
+
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 60px;
+    margin: auto;
+    width: 100% auto;
+
+}
+
+.slide :nth-child(1) {
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.slide :nth-child(2) {
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.slide :nth-child(3) {
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.slide :nth-child(4) {
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.slide :nth-child(5) {
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.slide :nth-child(6) {
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.resize-box:hover {
+    /* Scales the element to 120% (1.2 times) its original size */
+    transform: scale(1.2);
+}
+
+.grow:hover {
+    scale: 107%;
+    animation: ease-in-out;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    /* padding-left: 60px; */
+    padding-top: 20px;
+}
+
+.faqbox {
+    display: flex;
+    background-color: rgb(45 45 45);
+    padding: 28px;
+    max-width: 73vw;
+    margin: 15px auto 1px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqbox1 {
+    display: flex;
+    background-color: rgb(45 45 45);
+    padding: 28px;
+    max-width: 73vw;
+    margin: 9px auto 1px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.fhead h2 {
+    padding-left: 171px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.faqbox:hover {
+    transition: all .5s ease-out;
+    background-color: #a9a9a963;
+}
+
+.faqbox1:hover {
+    transition: all .5s ease-out;
+    background-color: #a9a9a963;
+}
+
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .question {
+    padding: 50px 0px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.footer a {
+    color: white;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1269px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .main input {
+        padding: 12px 95px 8px 12px;
+    }
+
+    .btn-red {
+        padding: 14px 15px;
+        border-radius: 7px;
+    }
+
+    .fhead h2 {
+        padding-left: 35px;
+        font-size: 18px;
+    }
+}
